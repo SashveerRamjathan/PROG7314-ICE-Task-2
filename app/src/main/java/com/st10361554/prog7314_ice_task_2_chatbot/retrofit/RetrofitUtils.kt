@@ -3,10 +3,31 @@ package com.st10361554.prog7314_ice_task_2_chatbot.retrofit
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * Utility object for creating and providing a Retrofit instance.
+ *
+ * This object simplifies the creation of Retrofit clients for making HTTP requests
+ * to the chatbot API server. It uses Gson for JSON serialization/deserialization.
+ */
 object RetrofitUtils {
 
+    /**
+     * Creates and returns a [Retrofit] instance configured for the chatbot server.
+     *
+     * @return A [Retrofit] object with the base URL set to the chatbot API endpoint
+     *         and using Gson for JSON conversion.
+     *
+     * Usage:
+     * ```
+     * val retrofit = RetrofitUtils.retrofit2()
+     * val apiService = retrofit.create(ChatService::class.java)
+     * ```
+     */
     fun retrofit2(): Retrofit {
-        return Retrofit.Builder().baseUrl("https://prog-7314-cohere-chatbot-server.vercel.app/")
-            .addConverterFactory(GsonConverterFactory.create()).build()
+        // Build and return a Retrofit instance with the specified base URL and Gson converter
+        return Retrofit.Builder()
+            .baseUrl("https://prog-7314-cohere-chatbot-server.vercel.app/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
     }
 }
