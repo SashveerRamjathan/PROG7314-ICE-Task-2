@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">PROG7314-ICE-Task-2-Chatbot</string>
+    <string name="app_name">CulinaryGPT</string>
+    <string name="tv_title_main">Welcome to CulinaryGPT!</string>
+    <string name="tv_description_main">Your AI-powered culinary assistant</string>
+    <string name="btn_open_chat">Chat with CulinaryGPT</string>
 </resources>
