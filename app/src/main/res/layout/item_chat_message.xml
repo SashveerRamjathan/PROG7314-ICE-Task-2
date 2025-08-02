@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:padding="8dp">
 
     <!-- User Message -->
@@ -28,7 +28,6 @@
             android:padding="12dp"
             android:textColor="@android:color/white"
             android:textSize="16sp"
-            tools:ignore="TextContrastCheck"
             tools:text="This is a user message" />
 
     </com.google.android.material.card.MaterialCardView>
@@ -57,5 +56,16 @@
             tools:text="This is an AI response message that can be quite long and will wrap to multiple lines as needed." />
 
     </com.google.android.material.card.MaterialCardView>
+
+    <!-- Loading Spinner -->
+    <ProgressBar
+        android:id="@+id/progressBarLoading"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/gold" />
 
 </LinearLayout>
