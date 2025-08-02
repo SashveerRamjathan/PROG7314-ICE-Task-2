@@ -3,4 +3,9 @@
     <string name="tv_title_main">Welcome to CulinaryGPT!</string>
     <string name="tv_description_main">Your AI-powered culinary assistant</string>
     <string name="btn_open_chat">Chat with CulinaryGPT</string>
+    <string name="btn_back_cd">Back</string>
+    <string name="tv_ai_chat_assistant">CulinaryGPT Chat Assistant</string>
+    <string name="btn_clear_chat_cd">Clear Chat</string>
+    <string name="input_hint">Type your message...</string>
+    <string name="fab_send_message_cd">Send message</string>
 </resources>
